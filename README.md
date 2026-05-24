@@ -7,7 +7,7 @@ Personal portfolio website for **Henli Harvey Asueros**, Remote Operations & Exe
 | Page | Description |
 |------|-------------|
 | `index.html` | Loader entry — branded preloader and redirect |
-| `home.html` | Home — Hero, services overview, CTA |
+| `index.html` | Home — Hero, services overview, CTA |
 | `about.html` | About — Bio, strengths, highlights |
 | `portfolio.html` | Portfolio — 3 featured projects |
 | `skills.html` | Skills — Tool categories & core strengths |
