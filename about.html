@@ -4,35 +4,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Henli Harvey Asueros</title>
+  <meta name="description" content="About Henli Harvey Asueros — detail-oriented Administrative and Executive Virtual Assistant from the Philippines. Expertise in communication, organization, and systems." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="/about.html" />
+  <meta property="og:title" content="About | Henli Harvey Asueros" />
+  <meta property="og:description" content="Detail-oriented Administrative and Executive Virtual Assistant. Communication, organization, and systems expertise." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:url" content="/about.html" />
+  <meta property="og:image" content="/images/about.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About | Henli Harvey Asueros" />
+  <meta name="twitter:description" content="Detail-oriented Administrative and Executive Virtual Assistant. Communication, organization, and systems expertise." />
+  <meta name="twitter:image" content="/images/about.jpeg" />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
-<body>
+<body class="page-about">
 
-<nav class="nav">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav class="nav" aria-label="Main navigation">
   <div class="nav__logo">HHA</div>
   <ul class="nav__links">
-    <li><a href="index.html">Home</a></li>
+    <li><a href="home.html">Home</a></li>
     <li><a href="about.html" class="active">About</a></li>
     <li><a href="portfolio.html">Portfolio</a></li>
     <li><a href="skills.html">Skills</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <button class="nav__toggle" onclick="toggleNav()">&#9776;</button>
+  <div class="nav__controls">
+    <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="nav__toggle" onclick="toggleNav()" aria-label="Toggle navigation menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <path class="line l1" d="M4 7h16" />
+        <path class="line l2" d="M4 12h16" />
+        <path class="line l3" d="M4 17h16" />
+      </svg>
+    </button>
+  </div>
 </nav>
 
-<section class="page-hero">
+<main id="main-content">
+
+<section class="page-hero" aria-labelledby="about-page-title">
   <div class="container">
     <p class="section__eyebrow">About Me</p>
-    <h1 class="page-hero__title">The Person Behind the Process</h1>
+    <h1 class="page-hero__title" id="about-page-title">The Person Behind the Process</h1>
   </div>
 </section>
 
-<section class="about section">
+<article class="about section" aria-labelledby="about-title">
   <div class="container about__grid">
     <div class="about__image-col">
       <div class="about__image-frame">
-        <img src="https://drive.google.com/uc?export=view&id=1Xo_9LI3cv8O9o1BXVgXRKqGHU-y47xpC" alt="Henli Harvey Asueros" onerror="this.style.display='none'" />
+        <img src="images/about.jpeg" alt="Henli Harvey Asueros">
         <div class="about__image-placeholder">HHA</div>
       </div>
       <div class="about__meta">
@@ -43,11 +70,11 @@
       </div>
     </div>
     <div class="about__text-col">
-      <h2>Hi, I&apos;m Henli Harvey.</h2>
+      <h2 id="about-title">Hi, I&apos;m Henli Harvey.</h2>
       <p class="about__lead">I&apos;m a detail-oriented Administrative and Executive Virtual Assistant with a passion for building systems that reduce operational friction and keep teams moving efficiently.</p>
-      <p>With a background in English Language and Applied Linguistics, I bring strong written communication judgment and professionalism to every task I handle&mdash;from inbox management to CRM coordination to workflow documentation.</p>
-      <p>I don&apos;t just answer emails or organize files. I build the underlying systems that prevent things from falling through the cracks. My work is about reducing executive overload, improving communication clarity, and maintaining operational continuity&mdash;even across time zones.</p>
-      <p>I graduated <em>Magna Cum Laude</em> and bring the same academic rigor and attention to detail into every professional engagement. Outside of work, I enjoy singing, working out, and designing Canva materials&mdash;which keeps my visual communication skills sharp.</p>
+      <p>With a background in English Language and Applied Linguistics, I bring strong written communication, judgment, and professionalism to every task I handle, from inbox management to CRM coordination to workflow documentation.</p>
+      <p>I don&apos;t just answer emails or organize files. I build the underlying systems that prevent things from falling through the cracks. My work is about reducing executive overload, improving communication clarity, and maintaining operational continuity even across time zones.</p>
+      <p>I graduated <em>Magna Cum Laude</em> and bring the same academic rigor and attention to detail into every professional engagement. Outside of work, I enjoy singing, working out, and designing Canva materials which keeps my visual communication skills sharp.</p>
       <div class="about__highlights">
         <div class="highlight">
           <strong>Communication</strong>
@@ -69,18 +96,31 @@
       <a href="contact.html" class="btn btn--primary">Work With Me</a>
     </div>
   </div>
-</section>
+</article>
 
-<footer class="footer">
+</main>
+
+<footer class="footer" role="contentinfo">
   <div class="container">
     <p>&copy; 2026 Henli Harvey Asueros &mdash; Remote Operations &amp; Executive Support Specialist</p>
-    <div class="footer__links">
-      <a href="https://www.linkedin.com/in/henli-harvey-asueros-a82b72378/" target="_blank">LinkedIn</a>
+    <nav class="footer__links" aria-label="Footer navigation">
+      <a href="https://www.linkedin.com/in/henli-harvey-asueros-a82b72378/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="mailto:henliharveyasueros02@gmail.com">Email</a>
-    </div>
+    </nav>
   </div>
 </footer>
 
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
 <script src="js/main.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Henli Harvey Asueros",
+  "jobTitle": "Administrative and Executive Virtual Assistant",
+  "url": "/about.html",
+  "sameAs": ["https://www.linkedin.com/in/henli-harvey-asueros-a82b72378/"]
+}
+</script>
 </body>
 </html>

@@ -4,46 +4,82 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Henli Harvey Asueros</title>
+  <meta name="description" content="Contact Henli Harvey Asueros — available for remote roles, freelance projects, and executive support partnerships. Send a message or view portfolio." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="/contact.html" />
+  <meta property="og:title" content="Contact | Henli Harvey Asueros" />
+  <meta property="og:description" content="Get in touch with Henli Harvey Asueros for remote executive support roles and partnerships." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/contact.html" />
+  <meta property="og:image" content="/images/me.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact | Henli Harvey Asueros" />
+  <meta name="twitter:description" content="Get in touch with Henli Harvey Asueros for remote executive support roles and partnerships." />
+  <meta name="twitter:image" content="/images/me.png" />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
-<body>
+<body class="page-contact">
 
-<nav class="nav">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav class="nav" aria-label="Main navigation">
   <div class="nav__logo">HHA</div>
   <ul class="nav__links">
-    <li><a href="index.html">Home</a></li>
+    <li><a href="home.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="portfolio.html">Portfolio</a></li>
     <li><a href="skills.html">Skills</a></li>
     <li><a href="contact.html" class="active">Contact</a></li>
   </ul>
-  <button class="nav__toggle" onclick="toggleNav()">&#9776;</button>
+  <div class="nav__controls">
+    <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="nav__toggle" onclick="toggleNav()" aria-label="Toggle navigation menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <path class="line l1" d="M4 7h16" />
+        <path class="line l2" d="M4 12h16" />
+        <path class="line l3" d="M4 17h16" />
+      </svg>
+    </button>
+  </div>
 </nav>
 
-<section class="page-hero">
+<main id="main-content">
+
+<section class="page-hero" aria-labelledby="contact-page-title">
   <div class="container">
     <p class="section__eyebrow">Get in Touch</p>
-    <h1 class="page-hero__title">Let&apos;s Work Together</h1>
+    <h1 class="page-hero__title" id="contact-page-title">Let&apos;s Work Together</h1>
     <p class="page-hero__sub">Available for remote roles, freelance projects, and long-term executive support partnerships.</p>
   </div>
 </section>
 
-<section class="contact section">
+<section class="contact section" aria-labelledby="contact-heading">
   <div class="container contact__grid">
 
-    <div class="contact__info">
-      <h2>Reach Out Directly</h2>
+    <div class="contact__info" aria-labelledby="contact-direct-heading" aria-labelledby="contact-direct-heading">
+      <h2 id="contact-direct-heading">Reach Out Directly</h2>
       <p>I&apos;m open to executive assistant roles, operations support positions, and remote administrative partnerships. Response time is typically within 24 hours.</p>
       <div class="contact__item">
-        <span class="contact__icon">&#128231;</span>
+        <span class="contact__icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" fill="none" stroke-width="1.5"/>
+            <path d="M3 8.2l8.5 5.3L21 8.2" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
         <div>
           <strong>Email</strong>
           <a href="mailto:henliharveyasueros02@gmail.com">henliharveyasueros02@gmail.com</a>
         </div>
       </div>
       <div class="contact__item">
-        <span class="contact__icon">&#128222;</span>
+        <span class="contact__icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M22 16.92V21a1 1 0 0 1-1.11 1 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2 3.11 1 1 0 0 1 3 2h4.09a1 1 0 0 1 1 .75c.12.66.29 1.3.5 1.92a1 1 0 0 1-.24 1L7.91 7.91a16 16 0 0 0 6 6l1.24-1.24a1 1 0 0 1 1-.24c.62.21 1.26.38 1.92.5a1 1 0 0 1 .75 1V21z" stroke="currentColor" fill="none" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
         <div>
           <strong>Phone / WhatsApp</strong>
           <a href="tel:+639065848695">+63 906 584 8695</a>
@@ -51,45 +87,62 @@
         </div>
       </div>
       <div class="contact__item">
-        <span class="contact__icon">&#128100;</span>
+        <span class="contact__icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4z" stroke="currentColor" fill="none" stroke-width="1.2"/>
+            <path d="M6 20a6 6 0 0 1 12 0" stroke="currentColor" fill="none" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </span>
         <div>
           <strong>LinkedIn</strong>
           <a href="https://www.linkedin.com/in/henli-harvey-asueros-a82b72378/" target="_blank">View Profile</a>
         </div>
       </div>
       <div class="contact__item">
-        <span class="contact__icon">&#128196;</span>
+        <span class="contact__icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" fill="none" stroke-width="1.5"/>
+            <path d="M8 7h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+        </span>
         <div>
-          <strong>Portfolio PDF</strong>
-          <a href="https://canva.link/3e981r8vxpq45ul" target="_blank">Download Portfolio</a>
+          <strong>Portfolio</strong>
+          <a href="https://canva.link/3e981r8vxpq45ul" target="_blank">View Portfolio</a>
         </div>
       </div>
       <div class="contact__availability">
-        <strong>&#128994; Available for Remote Work</strong>
+        <strong><span class="status-dot" aria-hidden="true"></span>Available for Remote Work</strong>
         <span>Philippines &mdash; GMT+8 &mdash; Flexible hours</span>
       </div>
     </div>
 
-    <div class="contact__form-col">
-      <h2>Send a Message</h2>
-      <form class="contact-form" onsubmit="handleFormSubmit(event)">
+    <div class="contact__form-col" aria-labelledby="contact-form-heading">
+      <h2 id="contact-form-heading">Send a Message</h2>
+      <form action="https://api.web3forms.com/submit" method="POST" aria-label="Contact form">
+      <input type="hidden" name="access_key" value="77710054-99f1-4903-a82c-63a0d1f5bc66">
+        <input type="hidden" name="redirect" value="http://127.0.0.1:5500/thankyou.html">
+        <input type="text" name="website" id="website" style="display:none;" tabindex="-1" autocomplete="off" aria-hidden="true" />
         <div class="form-group">
           <label for="name">Full Name</label>
-          <input type="text" id="name" placeholder="Your name" required />
+          <input type="text" name="name" id="name" placeholder="Your name" required minlength="2" maxlength="100" aria-label="Full Name" />
+          <span class="form-error" id="error-name"></span>
         </div>
         <div class="form-group">
           <label for="email">Email Address</label>
-          <input type="email" id="email" placeholder="your@email.com" required />
+          <input type="email" name="email" id="email" placeholder="your@email.com" required aria-label="Email Address" />
+          <span class="form-error" id="error-email"></span>
         </div>
         <div class="form-group">
           <label for="subject">Subject</label>
-          <input type="text" id="subject" placeholder="e.g. Executive Assistant Role" />
+          <input type="text" name="subject" id="subject" placeholder="e.g. Executive Assistant Role" maxlength="200" aria-label="Subject" />
+          <span class="form-error" id="error-subject"></span>
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" rows="5" placeholder="Tell me about the role or project..." required></textarea>
+          <textarea name="message" id="message" rows="5" placeholder="Tell me about the role or project..." required minlength="10" maxlength="5000" aria-label="Message"></textarea>
+          <span class="form-error" id="error-message"></span>
         </div>
-        <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          <button type="submit" class="btn btn--primary btn--full" id="submit-btn">Send Message</button>
         <p class="form-note" id="form-msg"></p>
       </form>
     </div>
@@ -97,16 +150,32 @@
   </div>
 </section>
 
-<footer class="footer">
+</main>
+
+<footer class="footer" role="contentinfo">
   <div class="container">
     <p>&copy; 2026 Henli Harvey Asueros &mdash; Remote Operations &amp; Executive Support Specialist</p>
-    <div class="footer__links">
-      <a href="https://www.linkedin.com/in/henli-harvey-asueros-a82b72378/" target="_blank">LinkedIn</a>
+    <nav class="footer__links" aria-label="Footer navigation">
+      <a href="https://www.linkedin.com/in/henli-harvey-asueros-a82b72378/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="mailto:henliharveyasueros02@gmail.com">Email</a>
-    </div>
+    </nav>
   </div>
 </footer>
 
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
 <script src="js/main.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact | Henli Harvey Asueros",
+  "url": "/contact.html",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+63 906 584 8695",
+    "contactType": "customer service"
+  }]
+}
+</script>
 </body>
 </html>

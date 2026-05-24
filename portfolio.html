@@ -4,33 +4,62 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Henli Harvey Asueros</title>
+  <meta name="description" content="Portfolio of projects demonstrating operational systems, workflow tools, and communication frameworks built for remote executive support." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="/portfolio.html" />
+  <meta property="og:title" content="Portfolio | Henli Harvey Asueros" />
+  <meta property="og:description" content="Operational systems, workflow tools, and communication frameworks for remote executive support." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/portfolio.html" />
+  <meta property="og:image" content="/images/me.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Portfolio | Henli Harvey Asueros" />
+  <meta name="twitter:description" content="Operational systems, workflow tools, and communication frameworks for remote executive support." />
+  <meta name="twitter:image" content="/images/me.png" />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
-<body>
+<body class="page-portfolio">
 
-<nav class="nav">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav class="nav" aria-label="Main navigation">
   <div class="nav__logo">HHA</div>
   <ul class="nav__links">
-    <li><a href="index.html">Home</a></li>
+    <li><a href="home.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="portfolio.html" class="active">Portfolio</a></li>
     <li><a href="skills.html">Skills</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <button class="nav__toggle" onclick="toggleNav()">&#9776;</button>
+  <div class="nav__controls">
+    <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="nav__toggle" onclick="toggleNav()" aria-label="Toggle navigation menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <path class="line l1" d="M4 7h16" />
+        <path class="line l2" d="M4 12h16" />
+        <path class="line l3" d="M4 17h16" />
+      </svg>
+    </button>
+  </div>
 </nav>
 
-<section class="page-hero">
+<main id="main-content">
+
+<section class="page-hero" aria-labelledby="portfolio-page-title">
   <div class="container">
     <p class="section__eyebrow">My Work</p>
-    <h1 class="page-hero__title">Portfolio Projects</h1>
+    <h1 class="page-hero__title" id="portfolio-page-title">Portfolio Projects</h1>
     <p class="page-hero__sub">Operational systems, workflow tools, and communication frameworks built to demonstrate real-world executive support capability.</p>
+    <a href="https://canva.link/3e981r8vxpq45ul" target="_blank" class="btn btn--primary"> Explore Full Portfolio </a>
   </div>
 </section>
 
-<section class="portfolio section">
+<section class="portfolio section" aria-labelledby="projects-heading">
   <div class="container">
+    <h2 id="projects-heading" style="position: absolute; left: -9999px;">Portfolio projects</h2>
 
     <!-- PROJECT 1 -->
     <div class="project-card">
@@ -57,7 +86,6 @@
           <p>Urgent &rarr; High &rarr; Medium &rarr; Low priority system with defined response timelines for efficient workload management.</p>
         </div>
       </div>
-      <a href="https://canva.link/3e981r8vxpq45ul" target="_blank" class="btn btn--outline">View Full Portfolio PDF</a>
     </div>
 
     <!-- PROJECT 2 -->
@@ -84,8 +112,7 @@
           <strong>Communication SOP</strong>
           <p>Documented response standards, escalation procedures, follow-up timelines, and communication tone guidelines.</p>
         </div>
-      </div>
-      <a href="https://canva.link/3e981r8vxpq45ul" target="_blank" class="btn btn--outline">View Full Portfolio PDF</a>
+      </div> 
     </div>
 
     <!-- PROJECT 3 -->
@@ -113,30 +140,32 @@
           <p>Structured Google Drive with client project files, administrative archives, invoices, meeting notes, SOPs, and onboarding documentation.</p>
         </div>
       </div>
-      <a href="https://canva.link/3e981r8vxpq45ul" target="_blank" class="btn btn--outline">View Full Portfolio PDF</a>
     </div>
 
   </div>
 </section>
+
+</main>
 
 <section class="cta-banner">
   <div class="container">
     <h2>Want to see the full portfolio?</h2>
     <p>Download the complete PDF portfolio for detailed screenshots, workflow documentation, and system walkthroughs.</p>
-    <a href="https://canva.link/3e981r8vxpq45ul" target="_blank" class="btn btn--primary">Download Portfolio PDF</a>
+    <a href="https://canva.link/3e981r8vxpq45ul" target="_blank" class="btn btn--primary">Explore Portfolio</a>
   </div>
 </section>
 
-<footer class="footer">
+<footer class="footer" role="contentinfo">
   <div class="container">
     <p>&copy; 2026 Henli Harvey Asueros &mdash; Remote Operations &amp; Executive Support Specialist</p>
-    <div class="footer__links">
-      <a href="https://www.linkedin.com/in/henli-harvey-asueros-a82b72378/" target="_blank">LinkedIn</a>
+    <nav class="footer__links" aria-label="Footer navigation">
+      <a href="https://www.linkedin.com/in/henli-harvey-asueros-a82b72378/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="mailto:henliharveyasueros02@gmail.com">Email</a>
-    </div>
+    </nav>
   </div>
 </footer>
 
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
 <script src="js/main.js"></script>
 </body>
 </html>

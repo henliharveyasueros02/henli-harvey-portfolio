@@ -4,33 +4,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skills | Henli Harvey Asueros</title>
+  <meta name="description" content="Skills and tools for remote executive support: operations, communication systems, CRM, Google Workspace, ClickUp, Notion, and Canva." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="/skills.html" />
+  <meta property="og:title" content="Skills | Henli Harvey Asueros" />
+  <meta property="og:description" content="Skills and tools for remote executive support: operations, communication systems, CRM, Google Workspace, ClickUp, Notion, and Canva." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/skills.html" />
+  <meta property="og:image" content="/images/me.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Skills | Henli Harvey Asueros" />
+  <meta name="twitter:description" content="Skills and tools for remote executive support: operations, communication systems, CRM, Google Workspace, ClickUp, Notion, and Canva." />
+  <meta name="twitter:image" content="/images/me.png" />
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 </head>
-<body>
+<body class="page-skills">
 
-<nav class="nav">
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav class="nav" aria-label="Main navigation">
   <div class="nav__logo">HHA</div>
   <ul class="nav__links">
-    <li><a href="index.html">Home</a></li>
+    <li><a href="home.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="portfolio.html">Portfolio</a></li>
     <li><a href="skills.html" class="active">Skills</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <button class="nav__toggle" onclick="toggleNav()">&#9776;</button>
+  <div class="nav__controls">
+    <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="nav__toggle" onclick="toggleNav()" aria-label="Toggle navigation menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <path class="line l1" d="M4 7h16" />
+        <path class="line l2" d="M4 12h16" />
+        <path class="line l3" d="M4 17h16" />
+      </svg>
+    </button>
+  </div>
 </nav>
 
-<section class="page-hero">
+<main id="main-content">
+
+<section class="page-hero" aria-labelledby="skills-page-title">
   <div class="container">
     <p class="section__eyebrow">Capabilities</p>
-    <h1 class="page-hero__title">Skills &amp; Tools</h1>
+    <h1 class="page-hero__title" id="skills-page-title">Skills &amp; Tools</h1>
     <p class="page-hero__sub">A curated set of operational, communication, and digital skills built for remote executive support.</p>
   </div>
 </section>
 
-<section class="skills section">
+<section class="skills section" aria-labelledby="skills-heading">
   <div class="container">
+    <h2 id="skills-heading" style="position: absolute; left: -9999px;">Skills by category</h2>
     <div class="skills__grid">
 
       <div class="skill-group">
@@ -123,17 +151,22 @@
     </div>
   </div>
 </section>
+  </div>
+</section>
 
-<footer class="footer">
+</main>
+
+<footer class="footer" role="contentinfo">
   <div class="container">
     <p>&copy; 2026 Henli Harvey Asueros &mdash; Remote Operations &amp; Executive Support Specialist</p>
-    <div class="footer__links">
-      <a href="https://www.linkedin.com/in/henli-harvey-asueros-a82b72378/" target="_blank">LinkedIn</a>
+    <nav class="footer__links" aria-label="Footer navigation">
+      <a href="https://www.linkedin.com/in/henli-harvey-asueros-a82b72378/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="mailto:henliharveyasueros02@gmail.com">Email</a>
-    </div>
+    </nav>
   </div>
 </footer>
 
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
 <script src="js/main.js"></script>
 </body>
 </html>

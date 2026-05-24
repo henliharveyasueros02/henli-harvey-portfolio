@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You | Henli Harvey Asueros</title>
+  <meta name="description" content="Thank you page for Henli Harvey Asueros. Your message has been received and I will reply shortly." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    .thank-you-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1rem;
+      background: var(--white);
+      color: var(--black);
+    }
+    .thank-you-box {
+      max-width: 640px;
+      width: 100%;
+      text-align: center;
+      padding: 3rem 2rem;
+      border-radius: var(--radius);
+      background: var(--beige);
+      border: 1px solid var(--beige-mid);
+      box-shadow: var(--shadow);
+    }
+    .thank-you-box h1 {
+      font-family: var(--serif);
+      font-size: clamp(2.5rem, 4vw, 3.5rem);
+      margin-bottom: 0.75rem;
+      color: var(--black);
+    }
+    .thank-you-box p {
+      color: var(--gray);
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+    .thank-you-box a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.85rem 1.75rem;
+      border-radius: var(--radius);
+    }
+    .thank-you-header {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem 1rem 0;
+    }
+  </style>
+</head>
+<body class="page-thankyou">
+
+<a href="#thank-you-content" class="skip-link">Skip to content</a>
+
+<nav class="nav" aria-label="Main navigation">
+  <div class="nav__logo">HHA</div>
+  <ul class="nav__links">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav__controls">
+    <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="nav__toggle" onclick="toggleNav()" aria-label="Toggle navigation menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+        <path class="line l1" d="M4 7h16" />
+        <path class="line l2" d="M4 12h16" />
+        <path class="line l3" d="M4 17h16" />
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<main id="thank-you-content" class="thank-you-page">
+  <div class="thank-you-box">
+    <h1>Thank You!</h1>
+    <p>Your message has been successfully sent. I appreciate your interest and will get back to you soon.</p>
+    <a href="contact.html" class="btn btn--primary">Return to Contact</a>
+  </div>
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <p>&copy; 2026 Henli Harvey Asueros &mdash; Remote Operations &amp; Executive Support Specialist</p>
+    <nav class="footer__links" aria-label="Footer navigation">
+      <a href="https://www.linkedin.com/in/henli-harvey-asueros-a82b72378/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:henliharveyasueros02@gmail.com">Email</a>
+    </nav>
+  </div>
+</footer>
+
+<button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
